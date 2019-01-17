@@ -23,16 +23,28 @@ int main()
             char m;
             scanf("%c", &m);
             scanf("%c", &m);
-            arr[index]=m;
+            arr[index] = m;
             index++;
             printf("添加成功，点击回车继续\n");
             char x;
-            scanf("%c",&x);
-            scanf("%c",&x);
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 2)
         {
-            /* code */
+
+            if (index >= 1)
+            {
+                index--;
+                printf("删除成功，点击回车继续\n");
+            }
+            else
+            {
+                printf("删除失败，点击回车继续\n");
+            }
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 3)
         {
