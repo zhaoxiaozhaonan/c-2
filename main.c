@@ -1,5 +1,5 @@
 #include <stdio.h>
-int index=0;
+int index = 0;
 char arr[1024];
 int main()
 {
@@ -19,11 +19,16 @@ int main()
 
         if (code == 1)
         {
-        //  printf("请输入一个敏感字符\n");
-        //  char m;
-        //  scanf("%c",&m);
-        //  scanf("%c",&m);
-
+            printf("请输入一个敏感字符\n");
+            char m;
+            scanf("%c", &m);
+            scanf("%c", &m);
+            arr[index]=m;
+            index++;
+            printf("添加成功，点击回车继续\n");
+            char x;
+            scanf("%c",&x);
+            scanf("%c",&x);
         }
         if (code == 2)
         {
@@ -40,6 +45,7 @@ int main()
         if (code == 5)
         {
             printf("点击回车，退出系统\n");
+            break;
         }
     }
 
